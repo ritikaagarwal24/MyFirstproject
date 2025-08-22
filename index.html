@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Castle Patrol & Balloon Pop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="overlay top-left">
+        <div class="score">
+          <span>🎈 Score:</span>
+          <strong id="scoreValue">0</strong>
+        </div>
+        <div class="hint">Click balloons to pop them!</div>
+      </header>
+
+      <header class="overlay top-right">
+        <button id="soundToggle" class="button" aria-label="Toggle sound">🔊</button>
+      </header>
+
+      <main class="stage">
+        <canvas id="game" aria-label="Castle with guards, horses, and balloons"></canvas>
+      </main>
+
+      <footer class="overlay bottom-center">
+        <div class="footer-text">Patrol the walls, watch the horses, and pop the balloons!</div>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+  </html>
+
